@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs")%>
+  <body>
+    <%- include("./partials/nav.ejs")%>
+    <div class="detay content">
+      <h2><%=ders.title%></h2>
+      <div class="content">
+        <p><%=ders.text%></p>
+        <br />
+        <h3>Creation Date:</h3>
+        <p><%=ders.createdAt%></p>
+      </div>
+      <a data-sil="<%=ders._id%>" class="sil">Discard</a>
+    </div>
+    <script>
+      const sil = document.querySelector('.sil');
+      sil.addEventListener('click', (e) => {
+        const endPoint = `/dersler/${sil.dataset.sil}`;
+
+        fetch(endPoint, {
+          method: 'DELETE',
+        })
+          .then((res) => res.json())
+          .then((data) => (window.location.href = data.redirect))
+          .catch((err) => console.log(err));
+      });
+    </script>
+  </body>
+</html>

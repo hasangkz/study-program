@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs")%>
+  <body>
+    <%- include("./partials/nav.ejs")%>
+    <div class="dersler content">
+      <h2>Study Program</h2>
+      <% if(dersler.length > 0) { %> <% dersler.forEach(item => { %>
+      <a href="/dersler/<%=item._id%>" class="tekil">
+        <h3 class="title"><%= item.title %></h3>
+      </a>
+      <h5 class="text"><%= item.text %></h5>
+      <% }) %> <% }else{ %>
+      <h3>Please add courses to create a Study Program.</h3>
+      <%}%>
+    </div>
+  </body>
+</html>

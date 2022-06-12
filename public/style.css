@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Indie Flower', cursive;
+  max-width: 1000px;
+  font-size: larger;
+  font-family: 'Raleway', sans-serif;
+}
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+h2 {
+  line-height: 15px;
+}
+h5 {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+li a:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+nav h1 {
+  font-size: 3em;
+}
+nav p,
+nav a {
+  color: #777;
+  font-weight: 300;
+}
+h2 {
+  margin-bottom: 40px;
+}
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.content {
+  margin-left: 20px;
+}
+.dersler a {
+  display: block;
+  margin: 40px 0;
+  padding-left: 30px;
+  border-left: 5px solid tomato;
+}
+.dersler a:hover h3 {
+  color: tomato;
+}
+.detay {
+  position: relative;
+}
+.sil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid black;
+}
+.sil:hover {
+  cursor: pointer;
+  background-color: tomato;
+  color: #222;
+}
+.ders-ekle from {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.ders-ekle input {
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+.ders-ekle label {
+  display: block;
+  margin-top: 20px;
+}
+.ders-ekle button {
+  margin-top: 20px;
+  background: tomato;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.ders-ekle button:hover {
+  background: rgb(227, 127, 127);
+}
